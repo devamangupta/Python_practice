@@ -20,3 +20,9 @@ for i in l:
             result += j
     N.append(result)
 print(N)
+m = []
+for i in N:
+    k = i.split()
+    for j in k:
+        m.append(j)
+print(m)
