@@ -1,6 +1,7 @@
 class computation:
     def __init__(self):
-        self.num
+        # self.num
+        pass
 
     def Fraction(self, num1,num2):
         if num2 == 0:
@@ -9,12 +10,13 @@ class computation:
             return num1 / num2
     def natural_sum(self, n):
         if n < 0:
-            return "Error: Input must be a non-negative integer."
+            print("Error: Input must be a non-negative integer.")
         else:
             total = 0
             for i in range(1, n+1):
                 total = total + i
-                return total
+            return total
+        
     def testPrime(self,num):
         if num <= 1:
             return "Error: Input must be an integer greater than 1."
@@ -27,9 +29,8 @@ class computation:
     def tableMult(self, num):
         if num < 0:
             return f"{num} is a negative number. Please enter a non-negative integer."
-        else:
-            for i in range(1,11):
-                print(f"{num} x {i} = {num * i}")
+        for i in range(1,11):
+            print(f"{num} x {i} = {num * i}")
     def allTablesMult(self,num):
         if num < 0:
             return f"{num} is a negative number. Please enter a non-negative integer."
@@ -39,4 +40,18 @@ class computation:
                     print(f"{i} is the factor of {num}.")
                 else:
                     pass
-    
+    def prime_divisers(self, num):
+        if num <= 1:
+            return f"{num} is not a valid input. Please enter an integer greater than 1"
+        else:
+            for i in range(2, num):
+                if num % i == 0:
+                    for j in range(2,i):
+                        if i % j == 0:
+                            break
+                        else:
+                            print(f"{i} is a prime divisor factor of {num}")
+
+obj1 = computation()
+print(obj1.natural_sum(-1))
+# print(obj1.testPrime(7))
