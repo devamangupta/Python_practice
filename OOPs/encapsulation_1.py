@@ -7,13 +7,17 @@ class Car:
         self.__company = comapny
         self.__model = model
         self.__year = year
-    def get_company(self):
+    def display_company(self):
         return self.__company
     def get_model(self):
         return self.__model
     def get_year(self):
         return self.__year
 car1 = Car("Toyota", "Camry", 2020)
-print(car1.get_company())  # Output: Toyota
+print(car1.display_company())  # Output: Toyota
 car1._Car__company = "Honda"  # This will change the company name of car1 to Honda
-print(car1.get_company())  # Output: Honda
+print(car1.display_company())  # Output: Honda
+
+
+"""
+Python does not have true private variables, but by convention, a single underscore prefix (e.g., _variable) is used to indicate that a variable is intended for internal use and should not be accessed directly from outside the class. However, this is just a convention and does not enforce any access restrictions. And Python is for adult programmers, so it relies on the programmer's discipline to follow these conventions rather than enforcing strict access control like some other programming languages."""
