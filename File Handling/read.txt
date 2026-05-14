@@ -1,0 +1,2 @@
+Hello Everyone, 
+This text file we only use to test file handling and try to learn it 
