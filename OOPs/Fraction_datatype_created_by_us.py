@@ -17,7 +17,9 @@ class Fraction:
         # To add two fractions we need to find the common denominator and then add the numerators
         new_num = self.numerator * other.denominator + other.numerator * self.denominator
         new_den = self.denominator * other.denominator
-        return Fraction(new_num, new_den)
+        # we can return the new fraction as below methdod as well.
+        # return Fraction(new_num, new_den)
+        return '{}/{}'.format(new_num, new_den)
     # create a method to add two fractions by using a normal method which will take another fraction as an argument and return the sum of the two fractions 
     def add(self, other):
         new_num = self.numerator * other.denominator + other.numerator * self.denominator
