@@ -2,6 +2,7 @@
 class Atm:
     # Create a constructor for the Atm class
     def __init__(self, name, pin, balance):
+        # The below variavles are instance variables which will be used to store the name, pin and balance of the user which means they different for different objects of the class and they are used to store the data of the user
         self.name = name
         self.pin = pin
         self.balance = balance
