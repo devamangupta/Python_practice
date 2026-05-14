@@ -19,7 +19,6 @@ class Hello:
         print("This is my first class and we try to call it using object")
 # Create an object for hello class
 greeting = Hello() #This will call the constructor of the class and print "Hello World"
-greeting.display() # This will call the display method of the class and print "This is my first class and we try to call it using object"
 
 """
 # Create an object of the Car class
